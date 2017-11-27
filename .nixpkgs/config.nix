@@ -11,6 +11,7 @@
         docker
         emacs
         htop
+        iotop
         mitmproxy # also uses python 3.6
         nox
         python36Packages.docker_compose
