@@ -170,9 +170,6 @@
   name = chpill
   email = etienne@spillemaeker.com
 
-[commit]
-  template = /home/chpill/b/lib/git-commit-template
-
 [rebase]
   stat = true
 
