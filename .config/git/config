@@ -143,7 +143,7 @@
 [core]
   editor = vim
   pager = less -+F
-  excludesfile = /home/chpill/.gitignore-global
+  excludesfile = ~/.config/git/ignore
 
 [push]
   default = current
