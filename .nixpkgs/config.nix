@@ -3,9 +3,9 @@
 
   packageOverrides = pkgs_: with pkgs_; {
 
-    all = with pkgs; buildEnv {
+    linux-all = with pkgs; buildEnv {
 
-      name = "all";
+      name = "linux-all";
 
       paths = [
         docker
@@ -20,6 +20,20 @@
         ripgrep
         tree
         xcape
+        yarn
+      ];
+    };
+
+    macos-all = with pkgs; buildEnv {
+
+      name = "macos-all";
+
+      paths = [
+        emacs
+        htop # seems very broken on macos...
+        nox
+        ripgrep
+        tree
         yarn
       ];
     };
