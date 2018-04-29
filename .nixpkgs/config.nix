@@ -8,10 +8,13 @@
       name = "linux-all";
 
       paths = [
+        clojure
         docker
         emacs
+        fd
         htop
         iotop
+        jdk
         mitmproxy # also uses python 3.6
         nox
         python36Packages.docker_compose
@@ -29,6 +32,7 @@
       name = "macos-all";
 
       paths = [
+        clojure
         emacs
         htop # seems very broken on macos...
         nox
