@@ -10,12 +10,15 @@
       paths = [
         clojure
         docker
-        emacs
+        # issues with font?
+        # emacs
         fd
+        fzf
         htop
         iotop
         jdk
-        mitmproxy # also uses python 3.6
+        # very unstable, download the bin from github
+        # mitmproxy
         nox
         python36Packages.docker_compose
         python36Packages.youtube-dl
@@ -34,6 +37,7 @@
       paths = [
         clojure
         emacs
+        fzf
         htop # seems very broken on macos...
         nox
         ripgrep

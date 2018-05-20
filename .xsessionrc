@@ -1,3 +1,2 @@
-if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi
-
-export PATH=$HOME/bin:$PATH
+# NB: we cannot use `source` here, so use the `.` to source the profile
+. $HOME/.profile
