@@ -6,6 +6,6 @@
 ```sh
 cd ~
 git clone git@github.com:chpill/gib
-
-nix-env -i all
+curl https://nixos.org/nix/install | sh
+nix-env -i chpill-linux
 ```

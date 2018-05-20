@@ -5,20 +5,18 @@
 
     linux-all = with pkgs; buildEnv {
 
-      name = "linux-all";
+      name = "chpill-linux";
 
       paths = [
         clojure
         docker
-        # issues with font?
-        # emacs
+        # emacs # issues with font??
         fd
         fzf
         htop
         iotop
         jdk
-        # very unstable, download the bin from github
-        # mitmproxy
+        # mitmproxy # very unstable, download the bin from github
         nox
         oh-my-zsh
         python36Packages.docker_compose
@@ -33,13 +31,14 @@
 
     macos-all = with pkgs; buildEnv {
 
-      name = "macos-all";
+      name = "chpill-macos";
 
       paths = [
         clojure
         emacs
         fzf
-        htop # seems very broken on macos...
+        # seems very broken on macos...
+        # htop
         nox
         ripgrep
         tree
