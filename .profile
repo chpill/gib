@@ -16,11 +16,10 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
+    . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+fi
 
-echo PLOP > ~/test-profile.txt
-
-# set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-if [ -e /home/chpill/.nix-profile/etc/profile.d/nix.sh ]; then . /home/chpill/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
