@@ -20,6 +20,7 @@
         # very unstable, download the bin from github
         # mitmproxy
         nox
+        oh-my-zsh
         python36Packages.docker_compose
         python36Packages.youtube-dl
         redshift
