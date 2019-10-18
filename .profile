@@ -20,6 +20,10 @@ if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
     . "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
 
+if [ -e "/etc/profile.d/nix.sh" ]; then
+    . "/etc/profile.d/nix.sh"
+fi
+
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
