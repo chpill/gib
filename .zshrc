@@ -53,9 +53,6 @@ function mcd () mkdir -p $1 && cd $1
 # work with docker compose
 alias dc=docker-compose
 
-# nvm version manager for node, still a necessary evil...
-source $HOME/.nvm/nvm.sh
-
 # fzf
 source "$HOME/.nix-profile/share/fzf/completion.zsh"
 source "$HOME/.nix-profile/share/fzf/key-bindings.zsh"
