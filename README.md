@@ -40,6 +40,8 @@ mv gib/.git .git
 git status
 # If there is nothing worth saving from the current config
 git reset --hard
+# Note: you should probably not checkout the .spacemacs now. Better to let
+# spacemacs initialize a new one, and check the differences.
 
 
 # Change default shell to zsh
@@ -51,5 +53,10 @@ sudo chsh -s /usr/bin/zsh chpill
 read -p "Enter the email to associate with the ssh key: " ssh_key_email
 ssh-keygen -t ed25519 -C $ssh_key_email
 
+
+# Install spacemacs
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+git co develop
+emacs
 
 ```

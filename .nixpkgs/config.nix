@@ -10,7 +10,7 @@
       paths = [
         clojure
         docker
-        # emacs # issues with font??
+        emacs # issues with font??
         fd
         fzf
         htop
